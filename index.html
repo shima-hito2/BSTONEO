@@ -1,15 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <h1>HELLO WORLD</h1>
+    <!-- ヘッダー -->
+    <header class="flex space-between">
+        <h1 class="header-title"><a href="index.html">BSTONEO</a></h1>
+        <div class="flex">
+            <ul class="flex header-menu">
+                <li><a href="#">AAAAA</a></li>
+                <li><a href="#">BBBBB</a></li>
+                <li><a href="#">CCCCC</a></li>
+                <li><a href="#">DDDDD</a></li>
+                <li>
+                    <a href="#" class="button">
+                        <div class="button__wrapper"></div>
+                        <div class="button__box">CONTACT</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="top">
+            <img class="top-images" src="images/birds-8611993_1280.jpg" alt="">
+            <img class="top-images" src="images/indian-bride-8457513_1280.jpg" alt="">
+            <img class="top-images" src="images/vehicle-8976090_1280.png" alt="">
+            <div class="top-content">
+                <p>いい感じのタイトル。</p>
+                <p>いい感じのサブタイトル。</p>
+            </div>
+            <div class="top-bottom">
+                <p></p>
+            </div>
+        </div>
+        <div class="details"></div>
+    </main>
 </body>
 
 </html>

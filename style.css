@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #f8f8f8;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #95A5B3;
+    color: #333333;
+    overflow-y: scroll;
+    width: calc(100vw - 17px);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 共通で使うクラス---------------------------------------------------- */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+/* ヘッダー---------------------------------------------------- */
+header {
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.header-title {
+    line-height: 80px;
+    margin: 0 32px;
+}
+
+.header-menu {
+    line-height: 80px;
+    margin: 0 32px;
+    gap: 24px;
+}
+
+/* トップ---------------------------------------------------- */
+.top {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.top-images {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    filter: contrast(50%);
+}
+
+.top-images:first-child {
+    display: block;
+}
+
+.top::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 30vw solid #FFF;
+    /* ちら見せ三角 高さを調節*/
+    border-left: calc(100vw - 17px) solid transparent;
+}
+
+.top::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 40vw solid #95A5B3;
+    /* 三角を白に */
+    border-right: calc(100vw - 17px) solid transparent;
+}
+
+.top-content {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.top-content p:first-child {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.top-content p:last-child {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+/* 詳細 */
+.details {
+    height: 800px;
+}
