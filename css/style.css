@@ -175,7 +175,7 @@ section+section {
 /*リンクテキスト全般の設定
 ---------------------------------------------------------------------------*/
 a {
-	color: var(--text-color);
+	color: var(--primary-color);
 	/*文字色。css冒頭で指定しているtext-colorを読み込みます*/
 	transition: 0.3s;
 	/*hoverまでにかける時間。0.3秒。*/
@@ -243,6 +243,7 @@ header {
 	position: absolute;
 	z-index: 1;
 	width: 100%;
+	background-color: #070707;
 }
 
 /*画面幅900px以上の追加指定*/
@@ -256,6 +257,12 @@ header {
 
 }
 
+
+/* ロゴ */
+#logo {
+	display: flex;
+	align-items: center;
+}
 /*ロゴ（※画像にする場合）*/
 #logo img {
 	display: block;
