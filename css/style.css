@@ -23,12 +23,10 @@
 :root {
 	--text-color: #333;
 	/*テキストカラー*/
-
 	--primary-color: #59d5e0;
 	/*テンプレートのメインとなる色*/
 	--primary-text-color: #fff;
 	/*メインカラーの上で使うテキスト色*/
-
 	--global-space: 5vw;
 	/*サイト内の左右へとる余白を一括管理しています。画面幅100%＝100vwです。*/
 }
@@ -263,6 +261,7 @@ header {
 	display: flex;
 	align-items: center;
 }
+
 /*ロゴ（※画像にする場合）*/
 #logo img {
 	display: block;
@@ -446,9 +445,10 @@ a.ddmenu::before {
 	position: fixed;
 	z-index: 101;
 	cursor: pointer;
+	background-color: #070707;
 	right: 3vw;
 	/*右からの配置場所指定*/
-	top: 1vw;
+	top: 10px;
 	/*上からの配置場所指定*/
 	padding: 16px 14px;
 	/*上下、左右への余白*/
@@ -469,7 +469,7 @@ a.ddmenu::before {
 	display: block;
 	transition: 0.3s;
 	/*アニメーションにかける時間。0.3秒。*/
-	border-top: 1.5px solid #333;
+	border-top: 1.5px solid #fff;
 	/*線の幅、線種、色*/
 }
 
