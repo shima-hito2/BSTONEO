@@ -16,8 +16,7 @@
 
 /*３セットのスライドショーを囲むそれぞれのブロック*/
 #mainimg div div {
-	width: 45vw;
-	/*幅。画面の45%。*/
+	width: 100%;
 }
 
 /*３枚の画像の共通設定*/
@@ -63,7 +62,7 @@
 #mainimg h1 {
 	margin: 0;
 	padding: 0;
-	font-size: 6vw;
+	font-size: clamp(16px, 6vw, 36px);
 	/*文字サイズ。100vwは画面幅100%のことです。*/
 	line-height: 1.5;
 	/*行間を少し狭く*/
@@ -73,7 +72,7 @@
 
 /*小さなテキスト*/
 #mainimg p {
-	font-size: 1.4vw;
+	font-size: 16px;
 	/*文字サイズ。100vwは画面幅100%のことです*/
 	padding-left: 0.5rem;
 	/*左に空ける余白。0.5文字分。*/
@@ -88,6 +87,7 @@
 }
 
 .slide.active {
+	opacity: 1;
 	pointer-events: auto;
 	/* 表示中のスライドのみクリックを有効にする */
 }
