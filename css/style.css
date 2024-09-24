@@ -8,15 +8,8 @@
 
 /*Google Fontsの読み込み
 ---------------------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-
-
-/*テンプレート専用cssファイルの読み込み
----------------------------------------------------------------------------*/
-@import url("slide.css");
-@import url("inview.css");
-
+/* @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap'); */
 
 /*CSSカスタムプロパティ（サイト全体を一括管理する為の設定）
 ---------------------------------------------------------------------------*/
